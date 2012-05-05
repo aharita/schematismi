@@ -10,9 +10,9 @@ using System.Text.RegularExpressions;
 
 namespace ConfigurationTool
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var options = new Options();
             ICommandLineParser parser = new CommandLineParser();
@@ -28,7 +28,7 @@ namespace ConfigurationTool
             Console.ReadLine();
         }
 
-        private static void Run(Options options)
+        public static void Run(Options options)
         {
             XDocument doc = XDocument.Load(options.InputFile);
             XDocument inner;
