@@ -1,0 +1,9 @@
+﻿<root>
+
+  <application name="SampleApplication">
+    <config fileName="db.config">
+      <item xpath="/connectionStrings/add[@connectionString]" value="Server=REPLACED;Database=REPLACED;uid=REPLACED;pwd=REPLACED;" />
+    </config>
+  </application>
+
+</root>
