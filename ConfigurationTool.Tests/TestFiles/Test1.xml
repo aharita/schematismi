@@ -1,18 +1,10 @@
-Post Configuration Tool
-=======================
-
-Helps you to configure applications post installation.
-
-You will be able to save a master xml configuration file that contains all the settings you want to modify, along with the values you want to use.
-
-```xml
-<configurationTool>
+﻿<configurationTool>
   
   <!-- application configuration -->
   <application name="app1">
     
     <!-- one of the files to configure -->
-    <config fileName="db.config">
+    <config fileName="TestFiles/db.config">
       
       <!-- attributes to replace value -->
       <attributes>
@@ -50,4 +42,3 @@ You will be able to save a master xml configuration file that contains all the s
   </application>-->
   
 </configurationTool>
-```
