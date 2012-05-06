@@ -23,22 +23,11 @@
       <elements>
         <element 
           xpath="/connectionStrings/myElement[@name='test']"
-          value="NEW VALUE"
-          />
+          value="NEW VALUE" />
       </elements>
       
     </config>
     
-    
   </application>
-  
-  
-  
-  
-  <!--<application name="app2">
-    <config fileName="db.config">
-      <item xpath="/connectionStrings/add[@connectionString]" value="Server=REPLACED;Database=REPLACED;uid=REPLACED;pwd=REPLACED;" />
-    </config>
-  </application>-->
   
 </configurationTool>
