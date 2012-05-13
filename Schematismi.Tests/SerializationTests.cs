@@ -1,23 +1,9 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="SerializationTests.cs" company="Microsoft">
-// TODO: Update copyright text.
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace ConfigurationTool.Tests
+﻿namespace Schematismi.Tests
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using NUnit.Framework;
-    using ConfigurationTool.Common.Utils;
-    using ConfigurationTool.Common.Entities;
-    using System.Xml.Linq;
+    using Schematismi.Common.Entities;
+    using Schematismi.Common.Utils;
 
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
     [TestFixture]
     public class SerializationTests
     {

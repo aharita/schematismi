@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CommandLine;
+﻿using CommandLine;
 using CommandLine.Text;
 
-namespace ConfigurationTool.CommandLine
+namespace Schematismi.CommandLine
 {
     public class Options
     {
-        private static readonly HeadingInfo _headingInfo = new HeadingInfo("ConfigurationTool", "0.1");
+        private static readonly HeadingInfo headingInfo = new HeadingInfo("ConfigurationTool", "0.1");
 
         [Option("i", "input", Required = true, HelpText = "XML configuration file to read.")]
         public string InputFile = null;
@@ -17,7 +13,7 @@ namespace ConfigurationTool.CommandLine
         [HelpOption(HelpText = "Dispaly this help screen.")]
         public string GetUsage()
         {
-            var help = new HelpText(Options._headingInfo);
+            var help = new HelpText(Options.headingInfo);
             help.AdditionalNewLineAfterOption = true;
             help.Copyright = new CopyrightInfo("aharita", 1983, 2012);
             help.AddPreOptionsLine("Configuration tool post installation");

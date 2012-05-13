@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F9CB036A-33B4-406E-92F6-289361B93833}</ProjectGuid>
+    <ProjectGuid>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConfigurationTool.Tests</RootNamespace>
-    <AssemblyName>ConfigurationTool.Tests</AssemblyName>
+    <RootNamespace>Schematismi.Common</RootNamespace>
+    <AssemblyName>Schematismi.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,40 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationToolTests.cs" />
+    <Compile Include="Entities\ApplicationElement.cs" />
+    <Compile Include="Entities\AttributeElement.cs" />
+    <Compile Include="Entities\ConfigElement.cs" />
+    <Compile Include="Entities\ConfigurationToolElement.cs" />
+    <Compile Include="Entities\ElementElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerializationTests.cs" />
+    <Compile Include="Utils\SerializerHelper.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConfigurationTool.Common\ConfigurationTool.Common.csproj">
-      <Project>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</Project>
-      <Name>ConfigurationTool.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ConfigurationTool\ConfigurationTool.csproj">
-      <Project>{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}</Project>
-      <Name>ConfigurationTool</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <Content Include="TestFiles\Test3.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TestFiles\Test2.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TestFiles\db.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TestFiles\db2.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TestFiles\Test1.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

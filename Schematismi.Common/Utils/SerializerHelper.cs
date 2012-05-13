@@ -1,21 +1,8 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="SerializerHelper.cs" company="Microsoft">
-// TODO: Update copyright text.
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace ConfigurationTool.Common.Utils
+﻿namespace Schematismi.Common.Utils
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using System.Xml.Linq;
     using System.Xml.Serialization;
 
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
     public class SerializerHelper
     {
         public static T DeserializeFromString<T>(string str)

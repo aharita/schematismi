@@ -1,4 +1,4 @@
-Post Configuration Tool
+Schematismi
 =======================
 
 Helps you to configure applications post installation.

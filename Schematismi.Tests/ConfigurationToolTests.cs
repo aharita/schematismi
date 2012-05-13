@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
-using ConfigurationTool.CommandLine;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using System.Xml.XPath;
+using NUnit.Framework;
+using Schematismi.CommandLine;
 
-namespace ConfigurationTool.Tests
+namespace Schematismi.Tests
 {
     [TestFixture]
     public class ConfigurationToolTests
@@ -20,11 +16,11 @@ namespace ConfigurationTool.Tests
                 InputFile = "TestFiles/Test1.xml"
             };
 
-            ConfigurationTool.Program.Run(options);
+            Schematismi.Program.Run(options);
             XDocument doc = XDocument.Load("TestFiles/db.config");
 
             Assert.AreEqual(
-                doc.XPathSelectElement(@"/connectionStrings/add[@name='Default']").Attribute("connectionString").Value, 
+                doc.XPathSelectElement(@"/connectionStrings/add[@name='Default']").Attribute("connectionString").Value,
                 "Server=DEFAULT;Database=DEFAULT;uid=DEFAULT;pwd=DEFAULT;");
 
             Assert.AreEqual(
@@ -44,7 +40,7 @@ namespace ConfigurationTool.Tests
                 InputFile = "TestFiles/Test2.xml"
             };
 
-            ConfigurationTool.Program.Run(options);
+            Schematismi.Program.Run(options);
             XDocument doc = XDocument.Load("TestFiles/db2.config");
 
             Assert.AreEqual(

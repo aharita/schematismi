@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CommandLine;
-using ConfigurationTool.CommandLine;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using System.Text.RegularExpressions;
-using ConfigurationTool.Common.Utils;
-using ConfigurationTool.Common.Entities;
+using CommandLine;
+using Schematismi.CommandLine;
+using Schematismi.Common.Entities;
+using Schematismi.Common.Utils;
 
-namespace ConfigurationTool
+namespace Schematismi
 {
     public class Program
     {
@@ -18,6 +14,7 @@ namespace ConfigurationTool
         {
             var options = new Options();
             ICommandLineParser parser = new CommandLineParser();
+
             if (parser.ParseArguments(args, options))
             {
                 Run(options);
