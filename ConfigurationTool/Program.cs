@@ -7,6 +7,8 @@ using ConfigurationTool.CommandLine;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using System.Text.RegularExpressions;
+using ConfigurationTool.Common.Utils;
+using ConfigurationTool.Common.Entities;
 
 namespace ConfigurationTool
 {
@@ -30,32 +32,27 @@ namespace ConfigurationTool
 
         public static void Run(Options options)
         {
-            XDocument doc = XDocument.Load(options.InputFile);
-            XDocument inner;
-            string filePath;
+            var result = SerializerHelper.DeserializeFromPath<ConfigurationToolElement>(options.InputFile);
+            XDocument doc;
 
-            foreach (var app in doc.Descendants("application"))
+            foreach (var app in result.Applications)
             {
-                foreach (var config in app.Descendants("config"))
+                foreach (var conf in app.ConfigElements)
                 {
-                    // open file
-                    filePath = config.Attribute("fileName").Value;
-                    inner = XDocument.Load(filePath);
+                    doc = XDocument.Load(conf.FileName);
 
-                    foreach (var attribute in config.Descendants("attribute"))
-                    { 
-                        inner.XPathSelectElement(
-                            attribute.Attribute("xpath").Value)
-                                .Attribute(attribute.Attribute("attribute").Value).Value = attribute.Attribute("value").Value;
+                    foreach (var attr in conf.Attributes)
+                    {
+                        doc.XPathSelectElement(attr.XPath).Attribute(attr.Attribute).Value = attr.Value;
                     }
 
-                    foreach (var element in config.Descendants("element"))
+                    foreach (var ele in conf.Elements)
                     {
-                        inner.XPathSelectElement(element.Attribute("xpath").Value).Value = element.Attribute("value").Value;
+                        doc.XPathSelectElement(ele.XPath).Value = ele.Value;
                     }
 
                     // save file
-                    inner.Save(filePath);
+                    doc.Save(conf.FileName);
                 }
             }
         }

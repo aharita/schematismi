@@ -71,6 +71,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfigurationTool.Common\ConfigurationTool.Common.csproj">
+      <Project>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</Project>
+      <Name>ConfigurationTool.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
