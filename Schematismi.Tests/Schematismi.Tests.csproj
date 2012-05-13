@@ -49,16 +49,6 @@
     <Compile Include="SerializationTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Schematismi.Common\Schematismi.Common.csproj">
-      <Project>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</Project>
-      <Name>Schematismi.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Schematismi\Schematismi.csproj">
-      <Project>{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}</Project>
-      <Name>Schematismi</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
     <Content Include="TestFiles\Test3.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -77,6 +67,12 @@
     <Content Include="TestFiles\Test1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Schematismi.Common\Schematismi.Common.csproj">
+      <Project>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</Project>
+      <Name>Schematismi.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

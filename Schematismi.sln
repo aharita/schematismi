@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi", "Schematismi\Schematismi.csproj", "{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Console", "Schematismi.Console\Schematismi.Console.csproj", "{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Tests", "Schematismi.Tests\Schematismi.Tests.csproj", "{F9CB036A-33B4-406E-92F6-289361B93833}"
 EndProject

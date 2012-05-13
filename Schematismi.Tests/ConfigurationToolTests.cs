@@ -1,22 +1,19 @@
 ﻿using System.Xml.Linq;
 using System.Xml.XPath;
 using NUnit.Framework;
-using Schematismi.CommandLine;
+using Schematismi.Common;
 
 namespace Schematismi.Tests
 {
     [TestFixture]
     public class ConfigurationToolTests
     {
+        private readonly ReplaceRules replaceRules = new ReplaceRules();
+
         [Test]
         public void AllChangesTest()
         {
-            Options options = new Options
-            {
-                InputFile = "TestFiles/Test1.xml"
-            };
-
-            Schematismi.Program.Run(options);
+            replaceRules.Execute("TestFiles/Test1.xml");
             XDocument doc = XDocument.Load("TestFiles/db.config");
 
             Assert.AreEqual(
@@ -35,12 +32,7 @@ namespace Schematismi.Tests
         [Test]
         public void SomeChangesTest()
         {
-            Options options = new Options
-            {
-                InputFile = "TestFiles/Test2.xml"
-            };
-
-            Schematismi.Program.Run(options);
+            replaceRules.Execute("TestFiles/Test2.xml");
             XDocument doc = XDocument.Load("TestFiles/db2.config");
 
             Assert.AreEqual(

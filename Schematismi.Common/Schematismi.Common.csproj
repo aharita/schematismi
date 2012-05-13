@@ -46,6 +46,7 @@
     <Compile Include="Entities\ConfigurationToolElement.cs" />
     <Compile Include="Entities\ElementElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceRules.cs" />
     <Compile Include="Utils\SerializerHelper.cs" />
   </ItemGroup>
   <ItemGroup />

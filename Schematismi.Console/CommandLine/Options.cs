@@ -1,7 +1,7 @@
 ﻿using CommandLine;
 using CommandLine.Text;
 
-namespace Schematismi.CommandLine
+namespace Schematismi.Console.CommandLine
 {
     public class Options
     {

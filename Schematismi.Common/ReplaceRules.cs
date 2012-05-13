@@ -1,35 +1,15 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using System.Xml.XPath;
-using CommandLine;
-using Schematismi.CommandLine;
 using Schematismi.Common.Entities;
 using Schematismi.Common.Utils;
 
-namespace Schematismi
+namespace Schematismi.Common
 {
-    public class Program
+    public class ReplaceRules
     {
-        public static void Main(string[] args)
+        public void Execute(string inputFile)
         {
-            var options = new Options();
-            ICommandLineParser parser = new CommandLineParser();
-
-            if (parser.ParseArguments(args, options))
-            {
-                Run(options);
-            }
-            else
-            {
-                Console.WriteLine(options.GetUsage());
-            }
-
-            Console.ReadLine();
-        }
-
-        public static void Run(Options options)
-        {
-            var result = SerializerHelper.DeserializeFromPath<ConfigurationToolElement>(options.InputFile);
+            var result = SerializerHelper.DeserializeFromPath<ConfigurationToolElement>(inputFile);
             XDocument doc;
 
             foreach (var app in result.Applications)
