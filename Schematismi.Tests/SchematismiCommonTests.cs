@@ -5,7 +5,7 @@
     using Schematismi.Common.Utils;
 
     [TestFixture]
-    public class SerializationTests
+    public class SchematismiCommonTests
     {
         [Test]
         public void SerializationConsistencyTest()

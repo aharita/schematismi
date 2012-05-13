@@ -44,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationToolTests.cs" />
+    <Compile Include="SchematismiConsoleTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerializationTests.cs" />
+    <Compile Include="SchematismiCommonTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

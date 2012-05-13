@@ -6,7 +6,7 @@ using Schematismi.Common;
 namespace Schematismi.Tests
 {
     [TestFixture]
-    public class ConfigurationToolTests
+    public class SchematismiConsoleTests
     {
         private readonly ReplaceRules replaceRules = new ReplaceRules();
 

@@ -7,36 +7,65 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Tests", "Schema
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Common", "Schematismi.Common\Schematismi.Common.csproj", "{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism", "Schematismi.Prism\Schematismi.Prism.csproj", "{30F30BB1-2468-4D5C-8F12-07E2C690538E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|x86.ActiveCfg = Debug|x86
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Debug|x86.Build.0 = Debug|x86
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|x86.ActiveCfg = Release|x86
 		{B0F6C4F3-9BC3-434B-8B28-4C7BF62A69D4}.Release|x86.Build.0 = Release|x86
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB036A-33B4-406E-92F6-289361B93833}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F9CB036A-33B4-406E-92F6-289361B93833}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CB036A-33B4-406E-92F6-289361B93833}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F9CB036A-33B4-406E-92F6-289361B93833}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F9CB036A-33B4-406E-92F6-289361B93833}.Release|x86.ActiveCfg = Release|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}.Release|x86.ActiveCfg = Release|Any CPU
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Debug|x86.ActiveCfg = Debug|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Debug|x86.Build.0 = Debug|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Release|Any CPU.ActiveCfg = Release|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Release|x86.ActiveCfg = Release|x86
+		{30F30BB1-2468-4D5C-8F12-07E2C690538E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal
