@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Schematismi.Prism.Module
+namespace Schematismi.Prism.MainModule
 {
     /// <summary>
     /// Interaction logic for ToolbarView.xaml

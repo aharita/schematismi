@@ -120,15 +120,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Resource Include="XamlCatalog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Schematismi.Prism.Infrastructure\Schematismi.Prism.Infrastructure.csproj">
       <Project>{0D1F0698-B652-4226-B3DA-637AEC943BEF}</Project>
       <Name>Schematismi.Prism.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Schematismi.Prism.MainModule\Schematismi.Prism.MainModule.csproj">
-      <Project>{1515319F-9DE1-475C-84D3-96876BAF53D2}</Project>
-      <Name>Schematismi.Prism.MainModule</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

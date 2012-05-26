@@ -1,8 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.UnityExtensions;
 using Microsoft.Practices.Unity;
-using Schematismi.Prism.Module;
 
 namespace Schematismi.Prism
 {
@@ -21,11 +21,17 @@ namespace Schematismi.Prism
             App.Current.MainWindow.Show();
         }
 
+        //protected override IModuleCatalog CreateModuleCatalog()
+        //{
+        //    ModuleCatalog catalog = new ModuleCatalog();
+        //    catalog.AddModule(typeof(MainModule.MainModule));
+        //    return catalog;
+        //}
+
         protected override IModuleCatalog CreateModuleCatalog()
         {
-            ModuleCatalog catalog = new ModuleCatalog();
-            catalog.AddModule(typeof(MainModule));
-            return catalog;
+            return Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(
+                new Uri("/Schematismi.Prism;component/XamlCatalog.xaml", UriKind.Relative));
         }
     }
 }

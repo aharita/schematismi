@@ -5,7 +5,11 @@ obj
 # mstest test results
 TestResults
 
+#ncrunch
+*.cache
+*.ncrunchproject
+
 #others
 *.user
 *.suo
-*.ncrunchproject
+

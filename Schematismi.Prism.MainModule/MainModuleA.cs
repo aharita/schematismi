@@ -3,14 +3,14 @@ using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.Module
+namespace Schematismi.Prism.MainModule
 {
-    public class MainModule : IModule
+    public class MainModuleA : IModule
     {
         readonly IUnityContainer _container;
         readonly IRegionManager _regionManager;
 
-        public MainModule(IUnityContainer container, IRegionManager regionManager)
+        public MainModuleA(IUnityContainer container, IRegionManager regionManager)
         {
             this._container = container;
             this._regionManager = regionManager;
