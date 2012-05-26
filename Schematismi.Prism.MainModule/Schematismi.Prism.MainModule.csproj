@@ -8,8 +8,8 @@
     <ProjectGuid>{1515319F-9DE1-475C-84D3-96876BAF53D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schematismi.Prism.Module</RootNamespace>
-    <AssemblyName>Schematismi.Prism.Module</AssemblyName>
+    <RootNamespace>Schematismi.Prism.MainModule</RootNamespace>
+    <AssemblyName>Schematismi.Prism.MainModule</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -71,7 +71,7 @@
     <Compile Include="ContentView.xaml.cs">
       <DependentUpon>ContentView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Module.cs" />
+    <Compile Include="MainModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToolbarView.xaml.cs">
       <DependentUpon>ToolbarView.xaml</DependentUpon>

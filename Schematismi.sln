@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{31A4EDE7-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Infrastructure", "Schematismi.Prism.Infrastructure\Schematismi.Prism.Infrastructure.csproj", "{0D1F0698-B652-4226-B3DA-637AEC943BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Module", "Schematismi.Prism.Module\Schematismi.Prism.Module.csproj", "{1515319F-9DE1-475C-84D3-96876BAF53D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.MainModule", "Schematismi.Prism.MainModule\Schematismi.Prism.MainModule.csproj", "{1515319F-9DE1-475C-84D3-96876BAF53D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

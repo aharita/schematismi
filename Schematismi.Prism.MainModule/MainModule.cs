@@ -5,12 +5,12 @@ using Schematismi.Prism.Infrastructure;
 
 namespace Schematismi.Prism.Module
 {
-    public class Module : IModule
+    public class MainModule : IModule
     {
         readonly IUnityContainer _container;
         readonly IRegionManager _regionManager;
 
-        public Module(IUnityContainer container, IRegionManager regionManager)
+        public MainModule(IUnityContainer container, IRegionManager regionManager)
         {
             this._container = container;
             this._regionManager = regionManager;
