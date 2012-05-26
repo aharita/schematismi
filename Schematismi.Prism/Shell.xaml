@@ -1,8 +1,14 @@
 ﻿<Window x:Class="Schematismi.Prism.Shell"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:infra="clr-namespace:Schematismi.Prism.Infrastructure;assembly=Schematismi.Prism.Infrastructure"
         Title="Shell">
-    <Grid>
-        <TextBlock Text="Hello World"></TextBlock>
-    </Grid>
+    <DockPanel LastChildFill="True">
+        <ContentControl 
+            DockPanel.Dock="Top"
+            prism:RegionManager.RegionName="{x:Static infra:RegionNames.ToolbarRegion}" />
+        <ContentControl 
+           prism:RegionManager.RegionName="{x:Static infra:RegionNames.ContentRegion}" />
+    </DockPanel>
 </Window>

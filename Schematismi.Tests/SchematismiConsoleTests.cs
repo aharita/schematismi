@@ -8,12 +8,12 @@ namespace Schematismi.Tests
     [TestFixture]
     public class SchematismiConsoleTests
     {
-        private readonly ReplaceRules replaceRules = new ReplaceRules();
+        private readonly ReplaceRules _replaceRules = new ReplaceRules();
 
         [Test]
         public void AllChangesTest()
         {
-            replaceRules.Execute("TestFiles/Test1.xml");
+            _replaceRules.Execute("TestFiles/Test1.xml");
             XDocument doc = XDocument.Load("TestFiles/db.config");
 
             Assert.AreEqual(
@@ -32,7 +32,7 @@ namespace Schematismi.Tests
         [Test]
         public void SomeChangesTest()
         {
-            replaceRules.Execute("TestFiles/Test2.xml");
+            _replaceRules.Execute("TestFiles/Test2.xml");
             XDocument doc = XDocument.Load("TestFiles/db2.config");
 
             Assert.AreEqual(
