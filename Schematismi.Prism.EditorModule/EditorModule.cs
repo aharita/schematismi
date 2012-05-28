@@ -3,14 +3,14 @@ using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.MainModule
+namespace Schematismi.Prism.EditorModule
 {
-    public class MainModuleA : IModule
+    public class EditorModule : IModule
     {
         readonly IUnityContainer _container;
         readonly IRegionManager _regionManager;
 
-        public MainModuleA(IUnityContainer container, IRegionManager regionManager)
+        public EditorModule(IUnityContainer container, IRegionManager regionManager)
         {
             this._container = container;
             this._regionManager = regionManager;
@@ -18,8 +18,7 @@ namespace Schematismi.Prism.MainModule
 
         public void Initialize()
         {
-            _regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
-            _regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(ContentView));
+            _regionManager.RegisterViewWithRegion(RegionNames.EditorRegion, typeof(EditorView));
         }
     }
 }

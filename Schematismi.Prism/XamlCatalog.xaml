@@ -3,8 +3,14 @@
                     xmlns:Modularity="clr-namespace:Microsoft.Practices.Prism.Modularity;assembly=Microsoft.Practices.Prism">
     
     <Modularity:ModuleInfo 
-        Ref="file://Schematismi.Prism.MainModule.dll" 
-        ModuleName="Schematismi.Prism.MainModule"
-        ModuleType="Schematismi.Prism.MainModule.MainModuleA, Schematismi.Prism.MainModule, Version=1.0.0.0"
+        Ref="file://Schematismi.Prism.EditorModule.dll" 
+        ModuleName="Schematismi.Prism.EditorModule"
+        ModuleType="Schematismi.Prism.EditorModule.EditorModule, Schematismi.Prism.EditorModule, Version=1.0.0.0"
+        InitializationMode="WhenAvailable"/>
+    
+    <Modularity:ModuleInfo 
+        Ref="file://Schematismi.Prism.ToolbarModule.dll" 
+        ModuleName="Schematismi.Prism.ToolbarModule"
+        ModuleType="Schematismi.Prism.ToolbarModule.ToolbarModule, Schematismi.Prism.ToolbarModule, Version=1.0.0.0"
         InitializationMode="WhenAvailable"/>
 </Modularity:ModuleCatalog>

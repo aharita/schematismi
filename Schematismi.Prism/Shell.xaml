@@ -9,6 +9,6 @@
             DockPanel.Dock="Top"
             prism:RegionManager.RegionName="{x:Static infra:RegionNames.ToolbarRegion}" />
         <ContentControl 
-           prism:RegionManager.RegionName="{x:Static infra:RegionNames.ContentRegion}" />
+           prism:RegionManager.RegionName="{x:Static infra:RegionNames.EditorRegion}" />
     </DockPanel>
 </Window>
