@@ -8,6 +8,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Common", "Schematismi.Common\Schematismi.Common.csproj", "{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism", "Schematismi.Prism\Schematismi.Prism.csproj", "{30F30BB1-2468-4D5C-8F12-07E2C690538E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D24D050-6A26-464A-9C15-22DE6488C0B4} = {1D24D050-6A26-464A-9C15-22DE6488C0B4}
+		{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED} = {6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PRISM", "PRISM", "{FAE61368-55A6-441D-885F-E824D7D76298}"
 EndProject
