@@ -1,5 +1,5 @@
 ﻿
-namespace Schematismi.Prism.EditorModule
+namespace Schematismi.Prism.EditorModule.ViewModel
 {
     public class EditorViewViewModel : IEditorViewViewModel
     {

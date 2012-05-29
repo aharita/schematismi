@@ -1,14 +1,15 @@
 ﻿using System.Windows.Controls;
+using Schematismi.Prism.EditorModule.ViewModel;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.ToolbarModule
+namespace Schematismi.Prism.EditorModule.View
 {
     /// <summary>
-    /// Interaction logic for ToolbarView.xaml
+    /// Interaction logic for EditorView.xaml
     /// </summary>
-    public partial class ToolbarView : UserControl, IView
+    public partial class EditorView : UserControl, IView
     {
-        public ToolbarView(IToolbarViewViewModel viewModel)
+        public EditorView(IEditorViewViewModel viewModel)
         {
             InitializeComponent();
 

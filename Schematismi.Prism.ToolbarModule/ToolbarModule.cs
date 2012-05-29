@@ -2,6 +2,8 @@
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
 using Schematismi.Prism.Infrastructure;
+using Schematismi.Prism.ToolbarModule.View;
+using Schematismi.Prism.ToolbarModule.ViewModel;
 
 namespace Schematismi.Prism.ToolbarModule
 {

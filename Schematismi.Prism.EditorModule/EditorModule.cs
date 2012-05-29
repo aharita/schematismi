@@ -1,6 +1,8 @@
 ﻿using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
+using Schematismi.Prism.EditorModule.View;
+using Schematismi.Prism.EditorModule.ViewModel;
 using Schematismi.Prism.Infrastructure;
 
 namespace Schematismi.Prism.EditorModule

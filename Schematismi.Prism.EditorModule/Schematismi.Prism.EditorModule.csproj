@@ -71,11 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EditorModule.cs" />
-    <Compile Include="EditorView.xaml.cs">
+    <Compile Include="View\EditorView.xaml.cs">
       <DependentUpon>EditorView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditorViewViewModel.cs" />
-    <Compile Include="IEditorViewViewModel.cs" />
+    <Compile Include="ViewModel\EditorViewViewModel.cs" />
+    <Compile Include="ViewModel\IEditorViewViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -88,7 +88,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="EditorView.xaml">
+    <Page Include="View\EditorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
