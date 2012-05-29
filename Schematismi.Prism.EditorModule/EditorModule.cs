@@ -23,9 +23,9 @@ namespace Schematismi.Prism.EditorModule
         {
             _container.RegisterType<EditorView>();
             _container.RegisterType<IView, EditorView>();
-            _container.RegisterType<IEditorViewViewModel, EditorViewViewModel>();
+            _container.RegisterType<IEditorViewModel, EditorViewModel>();
 
-            var viewModel = _container.Resolve<IEditorViewViewModel>();
+            var viewModel = _container.Resolve<IEditorViewModel>();
             var view = _container.Resolve<EditorView>();
 
             viewModel.Message = "Hi";

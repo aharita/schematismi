@@ -2,7 +2,7 @@
 
 namespace Schematismi.Prism.EditorModule.ViewModel
 {
-    public interface IEditorViewViewModel : IViewModel
+    public interface IEditorViewModel : IViewModel
     {
         string Message { get; set; }
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace Schematismi.Prism.EditorModule.ViewModel
 {
-    public class EditorViewViewModel : IEditorViewViewModel
+    public class EditorViewModel : IEditorViewModel
     {
         public string Message { get; set; }
     }

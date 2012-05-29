@@ -24,7 +24,7 @@ namespace Schematismi.Prism.ToolbarModule
         public void Initialize()
         {
             _container.RegisterType<ToolbarView>();
-            _container.RegisterType<IToolbarViewViewModel, ToolbarViewViewModel>();
+            _container.RegisterType<IToolbarViewModel, ToolbarViewModel>();
 
             _regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
         }

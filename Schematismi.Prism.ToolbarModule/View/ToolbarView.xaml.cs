@@ -9,7 +9,7 @@ namespace Schematismi.Prism.ToolbarModule.View
     /// </summary>
     public partial class ToolbarView : UserControl, IView
     {
-        public ToolbarView(IToolbarViewViewModel viewModel)
+        public ToolbarView(IToolbarViewModel viewModel)
         {
             InitializeComponent();
 

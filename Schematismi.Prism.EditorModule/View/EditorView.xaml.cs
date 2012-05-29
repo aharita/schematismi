@@ -9,7 +9,7 @@ namespace Schematismi.Prism.EditorModule.View
     /// </summary>
     public partial class EditorView : UserControl, IView
     {
-        public EditorView(IEditorViewViewModel viewModel)
+        public EditorView(IEditorViewModel viewModel)
         {
             InitializeComponent();
 

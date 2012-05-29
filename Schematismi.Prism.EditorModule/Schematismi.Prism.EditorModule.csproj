@@ -74,8 +74,8 @@
     <Compile Include="View\EditorView.xaml.cs">
       <DependentUpon>EditorView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\EditorViewViewModel.cs" />
-    <Compile Include="ViewModel\IEditorViewViewModel.cs" />
+    <Compile Include="ViewModel\EditorViewModel.cs" />
+    <Compile Include="ViewModel\IEditorViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

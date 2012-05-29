@@ -2,7 +2,7 @@
 
 namespace Schematismi.Prism.ToolbarModule.ViewModel
 {
-    public interface IToolbarViewViewModel : IViewModel
+    public interface IToolbarViewModel : IViewModel
     {
     }
 }
