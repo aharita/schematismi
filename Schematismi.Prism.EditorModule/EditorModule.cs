@@ -16,9 +16,21 @@ namespace Schematismi.Prism.EditorModule
             this._regionManager = regionManager;
         }
 
+        // Using View Composition
         public void Initialize()
         {
-            _regionManager.RegisterViewWithRegion(RegionNames.EditorRegion, typeof(EditorView));
+            _container.RegisterType<EditorView>();
+            _container.RegisterType<IView, EditorView>();
+            _container.RegisterType<IEditorViewViewModel, EditorViewViewModel>();
+
+            var viewModel = _container.Resolve<IEditorViewViewModel>();
+            var view = _container.Resolve<EditorView>();
+
+            viewModel.Message = "Hi";
+            view.ViewModel = viewModel;
+
+            IRegion region = _regionManager.Regions[RegionNames.EditorRegion];
+            region.Add(view);
         }
     }
 }

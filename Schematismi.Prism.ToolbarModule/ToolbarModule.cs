@@ -16,8 +16,14 @@ namespace Schematismi.Prism.ToolbarModule
             this._regionManager = regionManager;
         }
 
+        /// <summary>
+        /// Using View Discovery
+        /// </summary>
         public void Initialize()
         {
+            _container.RegisterType<ToolbarView>();
+            _container.RegisterType<IToolbarViewViewModel, ToolbarViewViewModel>();
+
             _regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
         }
     }
