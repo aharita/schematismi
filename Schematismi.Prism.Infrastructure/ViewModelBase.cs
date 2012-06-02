@@ -2,8 +2,16 @@
 
 namespace Schematismi.Prism.Infrastructure
 {
-    public class ViewModelBase : INotifyPropertyChanged
+    public class ViewModelBase : IViewModel, INotifyPropertyChanged
     {
+        public IView View { get; set; }
+
+        public ViewModelBase(IView view)
+        {
+            View = view;
+            View.ViewModel = this;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {

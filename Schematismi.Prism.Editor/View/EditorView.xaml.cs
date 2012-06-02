@@ -1,5 +1,5 @@
 ﻿using System.Windows.Controls;
-using Schematismi.Prism.Editor.ViewModel;
+
 using Schematismi.Prism.Infrastructure;
 
 namespace Schematismi.Prism.Editor.View
@@ -7,13 +7,11 @@ namespace Schematismi.Prism.Editor.View
     /// <summary>
     /// Interaction logic for EditorView.xaml
     /// </summary>
-    public partial class EditorView : UserControl, IView
+    public partial class EditorView : UserControl, IEditorView
     {
-        public EditorView(IEditorViewModel viewModel)
+        public EditorView()
         {
             InitializeComponent();
-
-            ViewModel = viewModel;
         }
 
         public IViewModel ViewModel

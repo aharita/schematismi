@@ -21,8 +21,7 @@ namespace Schematismi.Prism.Editor
         // Using View Composition
         public void Initialize()
         {
-            _container.RegisterType<EditorView>(new ContainerControlledLifetimeManager());
-            _container.RegisterType<IView, EditorView>(new ContainerControlledLifetimeManager());
+            _container.RegisterType<IEditorView, EditorView>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IEditorViewModel, EditorViewModel>(new ContainerControlledLifetimeManager());
 
             var viewModel = _container.Resolve<IEditorViewModel>();
