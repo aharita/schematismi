@@ -8,8 +8,8 @@
     <ProjectGuid>{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schematismi.Prism.ToolbarModule</RootNamespace>
-    <AssemblyName>Schematismi.Prism.ToolbarModule</AssemblyName>
+    <RootNamespace>Schematismi.Prism.Toolbar</RootNamespace>
+    <AssemblyName>Schematismi.Prism.Toolbar</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

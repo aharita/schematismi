@@ -1,8 +1,8 @@
 ﻿using System.Windows.Controls;
-using Schematismi.Prism.EditorModule.ViewModel;
+using Schematismi.Prism.Editor.ViewModel;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.EditorModule.View
+namespace Schematismi.Prism.Editor.View
 {
     /// <summary>
     /// Interaction logic for EditorView.xaml

@@ -1,5 +1,4 @@
-﻿
-namespace Schematismi.Prism.ToolbarModule.ViewModel
+﻿namespace Schematismi.Prism.Toolbar.ViewModel
 {
     public class ToolbarViewModel : IToolbarViewModel
     {

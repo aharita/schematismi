@@ -1,6 +1,6 @@
 ﻿using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.ToolbarModule.ViewModel
+namespace Schematismi.Prism.Toolbar.ViewModel
 {
     public interface IToolbarViewModel : IViewModel
     {

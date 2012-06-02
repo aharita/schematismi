@@ -3,7 +3,7 @@ using System.ComponentModel;
 using Microsoft.Practices.Prism.Commands;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.EditorModule.ViewModel
+namespace Schematismi.Prism.Editor.ViewModel
 {
     public class EditorViewModel : ViewModelBase, IEditorViewModel, INotifyPropertyChanged
     {
@@ -12,7 +12,10 @@ namespace Schematismi.Prism.EditorModule.ViewModel
         private string _message;
         public string Message
         {
-            get { return _message; }
+            get
+            {
+                return _message;
+            }
 
             set
             {
@@ -24,7 +27,7 @@ namespace Schematismi.Prism.EditorModule.ViewModel
         public EditorViewModel()
         {
             TestCommand = new DelegateCommand(TestMethod, CanTestMethod);
-            GlobalCommands.SuperTestMethod.RegisterCommand(TestCommand);
+            GlobalCommands.superTestMethod.RegisterCommand(TestCommand);
         }
 
         private bool CanTestMethod()

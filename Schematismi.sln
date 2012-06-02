@@ -23,11 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{31A4EDE7-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Infrastructure", "Schematismi.Prism.Infrastructure\Schematismi.Prism.Infrastructure.csproj", "{0D1F0698-B652-4226-B3DA-637AEC943BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.ToolbarModule", "Schematismi.Prism.ToolbarModule\Schematismi.Prism.ToolbarModule.csproj", "{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Toolbar", "Schematismi.Prism.Toolbar\Schematismi.Prism.Toolbar.csproj", "{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.EditorModule", "Schematismi.Prism.EditorModule\Schematismi.Prism.EditorModule.csproj", "{1D24D050-6A26-464A-9C15-22DE6488C0B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Editor", "Schematismi.Prism.Editor\Schematismi.Prism.Editor.csproj", "{1D24D050-6A26-464A-9C15-22DE6488C0B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schematismi.Prism.Services", "Schematismi.Prism.Services\Schematismi.Prism.Services.csproj", "{B9EE8992-D257-4C94-821C-A9CA64DFC769}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,17 @@ Global
 		{1D24D050-6A26-464A-9C15-22DE6488C0B4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1D24D050-6A26-464A-9C15-22DE6488C0B4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1D24D050-6A26-464A-9C15-22DE6488C0B4}.Release|x86.ActiveCfg = Release|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Debug|x86.Build.0 = Debug|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,8 +141,9 @@ Global
 		{30F30BB1-2468-4D5C-8F12-07E2C690538E} = {FAE61368-55A6-441D-885F-E824D7D76298}
 		{0D1F0698-B652-4226-B3DA-637AEC943BEF} = {FAE61368-55A6-441D-885F-E824D7D76298}
 		{FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2} = {FAE61368-55A6-441D-885F-E824D7D76298}
-		{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED} = {FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2}
 		{1D24D050-6A26-464A-9C15-22DE6488C0B4} = {FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2}
+		{6FD2A3FB-9003-472A-A279-9DCE0FD7E9ED} = {FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2}
+		{B9EE8992-D257-4C94-821C-A9CA64DFC769} = {FCBA9C2B-ABEE-4DB9-AD1A-C78533DCADE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35

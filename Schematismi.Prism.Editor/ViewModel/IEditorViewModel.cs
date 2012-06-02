@@ -1,6 +1,6 @@
 ﻿using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.EditorModule.ViewModel
+namespace Schematismi.Prism.Editor.ViewModel
 {
     public interface IEditorViewModel : IViewModel
     {

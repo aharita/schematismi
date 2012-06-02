@@ -1,11 +1,11 @@
 ﻿using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
-using Schematismi.Prism.EditorModule.View;
-using Schematismi.Prism.EditorModule.ViewModel;
+using Schematismi.Prism.Editor.View;
+using Schematismi.Prism.Editor.ViewModel;
 using Schematismi.Prism.Infrastructure;
 
-namespace Schematismi.Prism.EditorModule
+namespace Schematismi.Prism.Editor
 {
     public class EditorModule : IModule
     {

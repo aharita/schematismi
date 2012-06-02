@@ -4,6 +4,6 @@ namespace Schematismi.Prism.Infrastructure
 {
     public static class GlobalCommands
     {
-        public static CompositeCommand SuperTestMethod = new CompositeCommand();
+        public static CompositeCommand superTestMethod = new CompositeCommand();
     }
 }

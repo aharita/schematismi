@@ -1,8 +1,8 @@
 ﻿using System.Windows.Controls;
 using Schematismi.Prism.Infrastructure;
-using Schematismi.Prism.ToolbarModule.ViewModel;
+using Schematismi.Prism.Toolbar.ViewModel;
 
-namespace Schematismi.Prism.ToolbarModule.View
+namespace Schematismi.Prism.Toolbar.View
 {
     /// <summary>
     /// Interaction logic for ToolbarView.xaml
