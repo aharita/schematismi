@@ -2,10 +2,11 @@
 using System.Xml.XPath;
 using Schematismi.Common.Entities;
 using Schematismi.Common.Utils;
+using Schematismi.Interfaces;
 
 namespace Schematismi.Common
 {
-    public class ReplaceRules
+    public class ConfigurationReplaceRules : IConfigurationReplaceRules
     {
         public void Execute(string inputFile)
         {

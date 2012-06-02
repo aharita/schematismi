@@ -5,5 +5,5 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:infra="clr-namespace:Schematismi.Prism.Infrastructure;assembly=Schematismi.Prism.Infrastructure"
              mc:Ignorable="d" >
-    <Button Command="{x:Static infra:GlobalCommands.superTestMethod}">Change Value</Button>
+    <Button Command="{x:Static infra:GlobalCommands.superTestMethod}">Browse...</Button>
 </UserControl>

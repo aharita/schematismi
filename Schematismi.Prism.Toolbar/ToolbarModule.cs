@@ -23,8 +23,8 @@ namespace Schematismi.Prism.Toolbar
         /// </summary>
         public void Initialize()
         {
-            _container.RegisterType<ToolbarView>();
-            _container.RegisterType<IToolbarViewModel, ToolbarViewModel>();
+            _container.RegisterType<ToolbarView>(new ContainerControlledLifetimeManager());
+            _container.RegisterType<IToolbarViewModel, ToolbarViewModel>(new ContainerControlledLifetimeManager());
 
             _regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
         }

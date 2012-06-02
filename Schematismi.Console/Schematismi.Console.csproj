@@ -69,6 +69,10 @@
       <Project>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</Project>
       <Name>Schematismi.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Schematismi.Interfaces\Schematismi.Interfaces.csproj">
+      <Project>{BC565A49-9FC1-406A-848A-889492D07C5C}</Project>
+      <Name>Schematismi.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Samples\SampleConfiguration.xml">

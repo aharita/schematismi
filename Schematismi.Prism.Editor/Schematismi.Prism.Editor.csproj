@@ -82,6 +82,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Schematismi.Interfaces\Schematismi.Interfaces.csproj">
+      <Project>{BC565A49-9FC1-406A-848A-889492D07C5C}</Project>
+      <Name>Schematismi.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Schematismi.Prism.Infrastructure\Schematismi.Prism.Infrastructure.csproj">
       <Project>{0D1F0698-B652-4226-B3DA-637AEC943BEF}</Project>
       <Name>Schematismi.Prism.Infrastructure</Name>

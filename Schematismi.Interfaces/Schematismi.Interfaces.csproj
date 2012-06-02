@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{704EB6C0-85D0-4BB1-B0F2-E1BA7BEE254C}</ProjectGuid>
+    <ProjectGuid>{BC565A49-9FC1-406A-848A-889492D07C5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schematismi.Common</RootNamespace>
-    <AssemblyName>Schematismi.Common</AssemblyName>
+    <RootNamespace>Schematismi.Interfaces</RootNamespace>
+    <AssemblyName>Schematismi.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -21,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +29,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -42,20 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\ApplicationElement.cs" />
-    <Compile Include="Entities\AttributeElement.cs" />
-    <Compile Include="Entities\ConfigElement.cs" />
-    <Compile Include="Entities\ConfigurationToolElement.cs" />
-    <Compile Include="Entities\ElementElement.cs" />
+    <Compile Include="IConfigurationReplaceRules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConfigurationReplaceRules.cs" />
-    <Compile Include="Utils\SerializerHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Schematismi.Interfaces\Schematismi.Interfaces.csproj">
-      <Project>{BC565A49-9FC1-406A-848A-889492D07C5C}</Project>
-      <Name>Schematismi.Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,7 +14,7 @@ namespace Schematismi.Console
 
             if (parser.ParseArguments(args, options))
             {
-                new ReplaceRules().Execute(options.InputFile);
+                new ConfigurationReplaceRules().Execute(options.InputFile);
             }
             else
             {

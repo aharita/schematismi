@@ -2,13 +2,14 @@
 using System.Xml.XPath;
 using NUnit.Framework;
 using Schematismi.Common;
+using Schematismi.Interfaces;
 
 namespace Schematismi.Tests
 {
     [TestFixture]
     public class SchematismiConsoleTests
     {
-        private readonly ReplaceRules _replaceRules = new ReplaceRules();
+        private readonly IConfigurationReplaceRules _replaceRules = new ConfigurationReplaceRules();
 
         [Test]
         public void AllChangesTest()

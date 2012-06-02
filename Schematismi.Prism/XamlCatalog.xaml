@@ -13,4 +13,10 @@
         ModuleName="Schematismi.Prism.Toolbar"
         ModuleType="Schematismi.Prism.Toolbar.ToolbarModule, Schematismi.Prism.Toolbar, Version=1.0.0.0"
         InitializationMode="WhenAvailable"/>
+
+    <Modularity:ModuleInfo 
+        Ref="file://Schematismi.Prism.Services.dll" 
+        ModuleName="Schematismi.Prism.Services"
+        ModuleType="Schematismi.Prism.Services.ServicesModule, Schematismi.Prism.Services, Version=1.0.0.0"
+        InitializationMode="WhenAvailable"/>
 </Modularity:ModuleCatalog>
